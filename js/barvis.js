@@ -16,9 +16,9 @@ class BarVis {
 initVis(){
     let vis = this;
 
-    vis.margin = { top: 20, right: 0, bottom: 200, left: 140 };
+    vis.margin = { top: 20, right: 0, bottom: 100, left: 100 };
 
-    vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right;
+    vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right-100;
     vis.height =400 - vis.margin.top - vis.margin.bottom;
 
 
@@ -108,7 +108,7 @@ wrangleData(){
     }
 
     //generate condition
-    if (selected_region != 'select'){condition['REGION'] = selected_region;}
+    // if (selected_region != 'select'){condition['REGION'] = selected_region;}
     if (selected_country != 'select'){condition['COUNTRY'] = selected_country;}
     if (selected_category != 'select'){condition['CATEGORY'] = selected_category;}
     if (selected_stage != 'select'){condition['LOG_TYPE'] = selected_stage;}

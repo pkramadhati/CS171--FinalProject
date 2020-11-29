@@ -74,9 +74,9 @@ class DataTable {
             } )
         }
 
-        if (selected_region != 'select'){
-            condition['REGION'] = selected_region;
-        }
+        // if (selected_region != 'select'){
+        //     condition['REGION'] = selected_region;
+        // }
         if (selected_country != 'select'){
             condition['COUNTRY'] = selected_country;
         }

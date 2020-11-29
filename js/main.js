@@ -93,14 +93,14 @@ function createVisMeasure(data){
 }
 
 //Enable category selection via bootstrap select
-let selected_region = $('#regionSelector').val();
+// let selected_region = $('#regionSelector').val();
 let selected_category = $('#categorySelector').val();
 let selected_country = $('#countrySelector').val();
 let selected_stage = $('#stageSelector').val();
 
 function categoryChange() {
   selected_category = $('#categorySelector').val();
-  selected_region = $('#regionSelector').val();
+  // selected_region = $('#regionSelector').val();
   selected_country = $('#countrySelector').val();
   selected_stage = $('#stageSelector').val();
 

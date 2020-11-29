@@ -38,6 +38,8 @@ text {
   font-family: SyneMono;
   display: flex;
   flex-direction: column;
+   max-width: 1200px;
+  max-height: 680px;
 }
 
 .vis {

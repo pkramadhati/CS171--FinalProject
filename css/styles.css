@@ -28,18 +28,15 @@ text {
 }
 
 .box {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  margin-right: 50px;
+  margin:auto;
   height: 90vh;
   padding: 50px;
   background: #fff;
   font-family: SyneMono;
   display: flex;
   flex-direction: column;
-  max-width: 1800px;
-  max-height: 1200px;
+  max-width: 1200px;
+  max-height: 900px;
 }
 
 .vis {

@@ -16,9 +16,9 @@ class BarVis {
 initVis(){
     let vis = this;
 
-    vis.margin = { top: 20, right: 0, bottom: 100, left: 100 };
+    vis.margin = { top: 20, right: 0, bottom: 200, left: 140 };
 
-    vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right-100;
+    vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right;
     vis.height =400 - vis.margin.top - vis.margin.bottom;
 
 

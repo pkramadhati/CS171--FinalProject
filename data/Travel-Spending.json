@@ -1,0 +1,202 @@
+{ 
+    "years": [
+
+      {
+        "Year": 2000,
+        "Expenditures": 2501.7
+      },
+      {
+        "Year": 2001,
+        "Expenditures": 2421.1
+      },
+      {
+        "Year": 2002,
+        "Expenditures": 2423
+      },
+      {
+        "Year": 2003,
+        "Expenditures":2663.6
+      },
+      {
+        "Year": 2004,
+        "Expenditures": 3011.3
+      },
+      {
+        "Year": 2005,
+        "Expenditures": 3183.5
+      },
+      {
+        "Year": 2006,
+        "Expenditures": 3407.7
+      },
+      {
+        "Year": 2007,
+        "Expenditures": 3796
+      },
+      {
+        "Year": 2008,
+        "Expenditures": 4073
+      },
+      {
+        "Year": 2009,
+        "Expenditures": 3720.8
+      },
+      {
+        "Year": 2010,
+        "Expenditures": 3978.5
+      },
+      {
+        "Year": 2011,
+        "Expenditures": 4546
+      },
+      {
+        "Year": 2012,
+        "Expenditures": 4648
+      },
+      {
+        "Year": 2013,
+        "Expenditures": 4864
+      },
+      {
+        "Year": 2014,
+        "Expenditures": 5019
+      },
+      {
+        "Year": 2015,
+        "Expenditures": 4816
+      },
+      {
+        "Year": 2016,
+        "Expenditures": 4927
+      },
+      {
+        "Year": 2017,
+        "Expenditures": 5311
+      },
+      {
+        "Year": 2018,
+        "Expenditures": 5703
+      },
+      {
+        "Year": 2019,
+        "Expenditures": 5998
+      },
+      {
+        "Year": 2020,
+        "Expenditures": 2520
+      }
+    ],
+
+
+    "layers":[
+
+
+      {
+        "Year": 2000,
+        "Business Tourism": 601.7,
+        "Leisure Tourism": 1900
+      },
+      {
+        "Year": 2001,
+        "Business Tourism": 591.1,
+        "Leisure Tourism": 1830
+      },
+      {
+        "Year": 2002,
+        "Business Tourism": 582,
+        "Leisure Tourism": 1841
+      },
+      {
+        "Year": 2003,
+        "Business Tourism": 599.6,
+        "Leisure Tourism": 2064
+      },
+      {
+        "Year": 2004,
+        "Business Tourism": 672.3,
+        "Leisure Tourism": 2339
+      },
+      {
+        "Year": 2005,
+        "Business Tourism": 777.5,
+        "Leisure Tourism": 2406
+      },
+      {
+        "Year": 2006,
+        "Business Tourism": 848.7,
+        "Leisure Tourism": 2559
+      },
+      {
+        "Year": 2007,
+        "Business Tourism": 932,
+        "Leisure Tourism": 2864
+      },
+      {
+        "Year": 2008,
+        "Business Tourism": 986,
+        "Leisure Tourism": 3087
+      },
+      {
+        "Year": 2009,
+        "Business Tourism": 839.8,
+        "Leisure Tourism": 2881
+      },
+      {
+        "Year": 2010,
+        "Business Tourism": 902.5,
+        "Leisure Tourism": 3076
+      },
+      {
+        "Year": 2011,
+        "Business Tourism": 1026,
+        "Leisure Tourism": 3520
+      },
+      {
+        "Year": 2012,
+        "Business Tourism": 1045,
+        "Leisure Tourism": 3603
+      },
+      {
+        "Year": 2013,
+        "Business Tourism": 1081,
+        "Leisure Tourism": 3783
+      },
+
+      {
+        "Year": 2014,
+        "Business Tourism": 1103,
+        "Leisure Tourism": 3916
+      },
+      {
+        "Year": 2015,
+        "Business Tourism":1054,
+        "Leisure Tourism": 3762
+      },
+      {
+        "Year": 2016,
+        "Business Tourism": 1082,
+        "Leisure Tourism": 3845
+      },
+      {
+        "Year": 2017,
+        "Business Tourism": 1146,
+        "Leisure Tourism": 4165
+      },
+      {
+        "Year": 2018,
+        "Business Tourism": 1228,
+        "Leisure Tourism": 4475
+      },
+      {
+        "Year": 2019,
+        "Business Tourism": 1283,
+        "Leisure Tourism": 4715
+      },
+
+      {
+        "Year": 2020,
+        "Business Tourism": 539,
+        "Leisure Tourism": 1980
+      }
+    ]
+}

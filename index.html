@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS171 Final Project</title>
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- FULLPAGE -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+    />
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="fullpage">
+      <div id="title" class="section">
+        <h1>Visualizing the Impact of Covid-19 on Travel Industry</h1>
+      </div>
+
+      <div id="covidBackground" class="section">
+        <div class="box">
+          <div class="vis">
+            <div class="container-fluid h-100">
+              <div class="row">
+                <div class ="col-md-12">
+                  <h3>BACKGROUND - The Virus That Shut Down the World</h3>
+                  <h4>Global Distancing</h4>
+                </div>
+              </div>
+              <div class="row d-flex justify-content-around align-self-center h-75">
+                <div class="col-md-5 d-flex flex-column align-self-center background-moved">
+                  <p style="color: #484848"> Travel is one of the clearest ways to show how the coronavirus has disrupted the world. </p>
+                  <small style="color: #707070">
+                    In order to slow down the pandemic, countries issued travel restrictions, lockdown, etc.,
+                    and therefore, a lot of businesses have been impacted.
+                    The project depicts the travel industry from the perspective of public policy, air activities, recreation and provide insights about the future recovery scenarios.
+                  </small>
+                  <hr style="color: #707070">
+                  <p style="color: #484848">How’s the industry been impacted and where’s the future?</p>
+                </div>
+                <div class="col-md-7 d-flex flex-column align-self-center " style="margin-top: 5vh">
+                  <div class ="row">
+                    <div class = "col-md-12">
+                      <p style="color: #707070; text-align: center;"> As of Nov 2020, compared with 2019 Baseline </p>
+                    </div>
+                  </div>
+                  <div class ="row">
+                    <div class = "col-md-4">
+                      <img src="img/flight.png" class="rounded float-right" width = "84px" alt="flight">
+                    </div>
+                    <div class = "col-md-7">
+                      <h6>93%</h6>
+                      <h4 class="caption">Air Passengers Drop</h4>
+                    </div>
+                  </div>
+                  <div class ="row">
+                    <div class = "col-md-4">
+                      <img src="img/job.png" class="rounded float-right" width = "84px" alt="job">
+                    </div>
+                    <div class = "col-md-7">
+                      <h6>750,000</h6>
+                      <h4 class="caption">Travel-related Job Loss</h4>
+                    </div>
+                  </div>
+                  <div class ="row">
+                    <div class = "col-md-4">
+                      <img src="img/money.png" class="rounded float-right" width = "84px" alt="revenue">
+                    </div>
+                    <div class = "col-md-7">
+                      <h6>$2.7T</h6>
+                      <h4 class="caption">World’s Travel GDP Reduction</h4>
+                    </div>
+                  </div>
+
+                  <div class ="row">
+                    <div class = "col-md-12">
+                      <h5 style=" text-align: center;">Source: https://www.trtworld.com/ </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="photograph" class="section">
+        <div class="box">
+          <h3>Before & After - The Virus That Shut Down the World</h3>
+          <div class="vis">
+            <div class="container-fluid h-100" style="background-color: #ffb100">
+              <div class="row" style="background-color: #b3ff00">
+                <div class="col-md-8 offset-2" style="background-color: #ff0000">
+                  <div class="row h-75 justify-content-left"  style="margin-top: 5px" style="background-color: #001aff">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators" id="pageNum">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active h-75">
+                          <img class="d-block w-100 " src="img/italy.png" alt="Rome, Italy">
+                          <div class="carousel-caption d-none d-md-block h-25">
+                            <p>The Spanish Step - Rome, Italy</p>
+                            <p class="image-caption">Right: Before the global pandemic, the Spanish Step is one of the most popular spots for tourists and locals during the year.
+                            <br>Left:Rome's Spanish Steps were virtually deserted on Tuesday after a decree ordered all of Italy to be on lockdown in March, 2020.
+                              <br>(R:WF Sihardian/NurPhoto/Getty Images  L:Remo Casilli/Reuters)
+                            </p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/nyc.png" alt="New York City，US">
+                          <div class="carousel-caption d-none d-md-block">
+                            <p>Time Square - New York City, USA</p>
+                            <p class="image-caption">Right: As of 2019, nearly 380,000 pedestrians enter the heart of Times Square each day.
+                              <br>Left:Time Square is captured its solitude as one of the world’s busiest thoroughfares on March, 2020.
+                              <br>(R:Nicolas Economou/Getty Images  L:Angela Weiss/AFP-Getty Images)
+                            </p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/tokyo.png" alt="Tokyo, Japan">
+                          <div class="carousel-caption d-none d-md-block">
+                            <p>Japan National Stadium - Tokyo,Japan</p>
+                            <p class="image-caption">Right: Completed in Dec 2019, the stadium is constructed with the capacity to hold 60,102 audiences during Tokyo Olympics Games.
+                              <br>Left: On March 2020, the Tokyo Olympics Games is announced to be rescheduled to 2021 summer.
+                              <br>(R:AFP Contributor/Getty Images  L:Jae C Hong/AP)
+                            </p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/beijing.png" alt="Beijing,China">
+                          <div class="carousel-caption d-none d-md-block">
+                            <p>The Forbidden City - Beijng, China</p>
+                            <p class="image-caption">Right: Since 2012, the Forbidden City has seen an average of 14 million visitors annually.
+                              <br>Left: On May 2020, Beijing's Forbidden City reopens for National Break after being closed to tourists amid virus outbreak.
+                              <br>(R:AFP Contributor/Getty Images  L:Associated Press)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="photograph-2" class="section">
+        <div class="slides">
+        <div class="slide" id="photo1">
+          <div class="box">
+            <h3>Before & After - The Virus That Shut Down the World</h3>
+            <div class="container-fluid h-100 w-75">
+              <div class="row h-75 d-flex justify-content-around align-items-center" >
+                <div class="col-md-12">
+                  <img src="img/beijing.png">
+                </div>
+              </div>
+              <div class="row h-25 d-flex justify-content-around align-items-center">
+                <div class="col-md-12">
+                  <h2>The Spanish Step - Rome, Italy</h2>
+                 <h4>Right: Before the global pandemic, the Spanish Step is one of the most popular spots for tourists and locals during the year.
+                   <br>Left:Rome's Spanish Steps were virtually deserted on Tuesday after a decree ordered all of Italy to be on lockdown in March, 2020.
+                   <br>(R:WF Sihardian/NurPhoto/Getty Images  L:Remo Casilli/Reuters)</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide" id="photo2">
+            <div class="box">
+              <h3>Before & After - The Virus That Shut Down the World</h3>
+              <div class="container-fluid h-100 w-75">
+                <div class="row h-75 d-flex justify-content-around align-items-center">
+                  <div class="col-md-12">
+                    <img src="img/beijing.png">
+                  </div>
+                </div>
+                <div class="row h-25 d-flex justify-content-around align-items-center">
+                  <div class="col-md-12">
+                    <h2>The Spanish Step - Rome, Italy</h2>
+                    <h4>Right: Before the global pandemic, the Spanish Step is one of the most popular spots for tourists and locals during the year.
+                      <br>Left:Rome's Spanish Steps were virtually deserted on Tuesday after a decree ordered all of Italy to be on lockdown in March, 2020.
+                      <br>(R:WF Sihardian/NurPhoto/Getty Images  L:Remo Casilli/Reuters)</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="slide" id="photo3">
+            <div class="box">
+              <h3>Before & After - The Virus That Shut Down the World</h3>
+              <div class="container-fluid h-100 w-75">
+                <div class="row h-75 d-flex justify-content-around align-items-center">
+                  <div class="col-md-12">
+                    <img src="img/beijing.png">
+                  </div>
+                </div>
+                <div class="row h-25 d-flex justify-content-around align-items-center">
+                  <div class="col-md-12">
+                    <h2>The Spanish Step - Rome, Italy</h2>
+                    <h4>Right: Before the global pandemic, the Spanish Step is one of the most popular spots for tourists and locals during the year.
+                      <br>Left:Rome's Spanish Steps were virtually deserted on Tuesday after a decree ordered all of Italy to be on lockdown in March, 2020.
+                      <br>(R:WF Sihardian/NurPhoto/Getty Images  L:Remo Casilli/Reuters)</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="slide" id="photo4">
+          <div class="box">
+            <h3>Before & After - The Virus That Shut Down the World</h3>
+            <div class="container-fluid h-100 w-75">
+              <div class="row h-75 d-flex justify-content-around align-items-center">
+                <div class="col-md-12">
+                  <img src="img/beijing.png">
+                </div>
+              </div>
+              <div class="row h-25 d-flex justify-content-around align-items-center">
+                <div class="col-md-12">
+                  <h2>The Spanish Step - Rome, Italy</h2>
+                  <h4>Right: Before the global pandemic, the Spanish Step is one of the most popular spots for tourists and locals during the year.
+                    <br>Left:Rome's Spanish Steps were virtually deserted on Tuesday after a decree ordered all of Italy to be on lockdown in March, 2020.
+                    <br>(R:WF Sihardian/NurPhoto/Getty Images  L:Remo Casilli/Reuters)</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="travelPolicy" class="section">
+        <div class="box">
+
+          <div class="vis">
+            <div class="container-fluid h-100">
+
+              <h3>Covid-19 Government Measures</h3>
+            <!-- Travel Policy Start -->
+            <!--data table-->
+            <div class="row">
+              <div class="col-md-1">
+              </div>
+              <div class="col-md-10">
+                <table style="width:100%" id="tableDiv">
+                </table>
+
+                <div class="row">
+                  <!--FILTER-->
+                  <div class="col-1 filter">
+                    <!--REGION SELECTOR-->
+<!--                    <div class="row dropdown">-->
+<!--                      <div class="col-1"></div>-->
+<!--                      <div class="col-10">-->
+<!--                        <label for="regionSelector" style="text-align: left">Region</label>-->
+<!--                        <br>-->
+<!--                        <select name="region" id="regionSelector" onchange="categoryChange()">-->
+<!--                          <option value="select">-All-</option>-->
+<!--                          <option value="Africa">Africa</option>-->
+<!--                          <option value="America">Americas</option>-->
+<!--                          <option value="Asia">Asia</option>-->
+<!--                          <option value="Europe">Europe</option>-->
+<!--                          <option value="Middle east">Middle East</option>-->
+<!--                        </select>-->
+<!--                      </div>-->
+<!--                      <div class="col-1"></div>-->
+<!--                    </div>-->
+
+                    <!--COUNTRY SELECTOR-->
+                    <div class="row dropdown">
+                      <div class="col-1"></div>
+                      <div class="col-10">
+                        <label for="countrySelector" style="text-align: left">Country</label>
+                        <br>
+                        <select name="region" id="countrySelector" onchange="categoryChange()">
+                          <option value="select">-All-</option>
+                          <option value="Afghanistan">Afghanistan</option>
+                          <option value="Albania">Albania</option>
+                          <option value="Algeria">Algeria</option>
+                          <option value="Angola">Angola</option>
+                          <option value="Antigua and Barbuda">Antigua & Barbuda</option>
+                          <option value="Argentina">Argentina</option>
+                          <option value="Armenia">Armenia</option>
+                          <option value="Australia">Australia</option>
+                          <option value="Austria">Austria</option>
+                          <option value="Azerbaijan">Azerbaijan</option>
+                          <option value="Bahamas">Bahamas</option>
+                          <option value="Bahrain">Bahrain</option>
+                          <option value="Bangladesh">Bangladesh</option>
+                          <option value="Barbados">Barbados</option>
+                          <option value="Belarus">Belarus</option>
+                          <option value="Belgium">Belgium</option>
+                          <option value="Belize">Belize</option>
+                          <option value="Benin">Benin</option>
+                          <option value="Bhutan">Bhutan</option>
+                          <option value="Bolivia">Bolivia</option>
+                          <option value="Bonaire">Bonaire</option>
+                          <option value="Bosnia and Herzegovina">Bosnia & Herzegovina</option>
+                          <option value="Botswana">Botswana</option>
+                          <option value="Brazil">Brazil</option>
+                          <option value="Brunei">Brunei</option>
+                          <option value="Bulgaria">Bulgaria</option>
+                          <option value="Burkina Faso">Burkina Faso</option>
+                          <option value="Burundi">Burundi</option>
+                          <option value="Cambodia">Cambodia</option>
+                          <option value="Cameroon">Cameroon</option>
+                          <option value="Canada">Canada</option>
+                          <option value="Cape Verde">Cape Verde</option>
+                          <option value="CAR">Central African Republic</option>
+                          <option value="Chad">Chad</option>
+                          <option value="Chile">Chile</option>
+                          <option value="China">China</option>
+                          <option value="Colombia">Colombia</option>
+                          <option value="Comoros">Comoros</option>
+                          <option value="Congo">Congo</option>
+                          <option value="Costa Rica">Costa Rica</option>
+                          <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                          <option value="Croatia">Croatia</option>
+                          <option value="Cuba">Cuba</option>
+                          <option value="Cyprus">Cyprus</option>
+                          <option value="Czech Republic">Czech Republic</option>
+                          <option value="Denmark">Denmark</option>
+                          <option value="Djibouti">Djibouti</option>
+                          <option value="Dominica">Dominica</option>
+                          <option value="Dominican Republic">Dominican Republic</option>
+                          <option value="Ecuador">Ecuador</option>
+                          <option value="Egypt">Egypt</option>
+                          <option value="El Salvador">El Salvador</option>
+                          <option value="Equatorial Guinea">Equatorial Guinea</option>
+                          <option value="Eritrea">Eritrea</option>
+                          <option value="Estonia">Estonia</option>
+                          <option value="Eswatini">Eswatini</option>
+                          <option value="Ethiopia">Ethiopia</option>
+                          <option value="Fiji">Fiji</option>
+                          <option value="Finland">Finland</option>
+                          <option value="France">France</option>
+                          <option value="Gabon">Gabon</option>
+                          <option value="Gambia">Gambia</option>
+                          <option value="Georgia">Georgia</option>
+                          <option value="Germany">Germany</option>
+                          <option value="Ghana">Ghana</option>
+                          <option value="Greece">Greece</option>
+                          <option value="Grenada">Grenada</option>
+                          <option value="Guatemala">Guatemala</option>
+                          <option value="Guinea">Guinea</option>
+                          <option value="Guinea-Bissau">Guinea-Bissau</option>
+                          <option value="Guyana">Guyana</option>
+                          <option value="Haiti">Haiti</option>
+                          <option value="Honduras">Honduras</option>
+                          <option value="Hong Kong">Hong Kong</option>
+                          <option value="Hungary">Hungary</option>
+                          <option value="Iceland">Iceland</option>
+                          <option value="Indonesia">Indonesia</option>
+                          <option value="India">India</option>
+                          <option value="Iran">Iran</option>
+                          <option value="Iraq">Iraq</option>
+                          <option value="Ireland">Ireland</option>
+                          <option value="Israel">Israel</option>
+                          <option value="Italy">Italy</option>
+                          <option value="Jamaica">Jamaica</option>
+                          <option value="Japan">Japan</option>
+                          <option value="Jordan">Jordan</option>
+                          <option value="Kazakhstan">Kazakhstan</option>
+                          <option value="Kenya">Kenya</option>
+                          <option value="Kiribati">Kiribati</option>
+                          <option value="Korea, Republic of">Korea South</option>
+                          <option value="Kuwait">Kuwait</option>
+                          <option value="Kyrgyzstan">Kyrgyzstan</option>
+                          <option value="Laos">Laos</option>
+                          <option value="Latvia">Latvia</option>
+                          <option value="Lebanon">Lebanon</option>
+                          <option value="Lesotho">Lesotho</option>
+                          <option value="Liberia">Liberia</option>
+                          <option value="Libya">Libya</option>
+                          <option value="Liechtenstein">Liechtenstein</option>
+                          <option value="Lithuania">Lithuania</option>
+                          <option value="Luxembourg">Luxembourg</option>
+                          <option value="Macedonia">Macedonia</option>
+                          <option value="Madagascar">Madagascar</option>
+                          <option value="Malaysia">Malaysia</option>
+                          <option value="Malawi">Malawi</option>
+                          <option value="Maldives">Maldives</option>
+                          <option value="Mali">Mali</option>
+                          <option value="Malta">Malta</option>
+                          <option value="Marshall Islands">Marshall Islands</option>
+                          <option value="Mauritania">Mauritania</option>
+                          <option value="Mauritius">Mauritius</option>
+                          <option value="Mexico">Mexico</option>
+                          <option value="Micronesia">Micronesia</option>
+                          <option value="Moldova">Moldova</option>
+                          <option value="Monaco">Monaco</option>
+                          <option value="Mongolia">Mongolia</option>
+                          <option value="Montserrat">Montserrat</option>
+                          <option value="Morocco">Morocco</option>
+                          <option value="Mozambique">Mozambique</option>
+                          <option value="Myanmar">Myanmar</option>
+                          <option value="Nambia">Nambia</option>
+                          <option value="Nauru">Nauru</option>
+                          <option value="Nepal">Nepal</option>
+                          <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                          <option value="New Zealand">New Zealand</option>
+                          <option value="Nicaragua">Nicaragua</option>
+                          <option value="Niger">Niger</option>
+                          <option value="Nigeria">Nigeria</option>
+                          <option value="Norway">Norway</option>
+                          <option value="Oman">Oman</option>
+                          <option value="Pakistan">Pakistan</option>
+                          <option value="Palau">Palau Island</option>
+                          <option value="Palestine">Palestine</option>
+                          <option value="Panama">Panama</option>
+                          <option value="Papua New Guinea">Papua New Guinea</option>
+                          <option value="Paraguay">Paraguay</option>
+                          <option value="Peru">Peru</option>
+                          <option value="Phillipines">Philippines</option>
+                          <option value="Poland">Poland</option>
+                          <option value="Portugal">Portugal</option>
+                          <option value="Qatar">Qatar</option>
+                          <option value="Romania">Romania</option>
+                          <option value="Russia">Russia</option>
+                          <option value="Rwanda">Rwanda</option>
+                          <option value="Samoa">Samoa</option>
+                          <option value="San Marino">San Marino</option>
+                          <option value="Sao Tome and Principe">Sao Tome & Principe</option>
+                          <option value="Saudi Arabia">Saudi Arabia</option>
+                          <option value="Senegal">Senegal</option>
+                          <option value="Seychelles">Seychelles</option>
+                          <option value="Sierra Leone">Sierra Leone</option>
+                          <option value="Singapore">Singapore</option>
+                          <option value="Slovakia">Slovakia</option>
+                          <option value="Slovenia">Slovenia</option>
+                          <option value="Solomon Islands">Solomon Islands</option>
+                          <option value="Somalia">Somalia</option>
+                          <option value="South Africa">South Africa</option>
+                          <option value="Spain">Spain</option>
+                          <option value="Sri Lanka">Sri Lanka</option>
+                          <option value="Sudan">Sudan</option>
+                          <option value="Suriname">Suriname</option>
+                          <option value="Sweden">Sweden</option>
+                          <option value="Switzerland">Switzerland</option>
+                          <option value="Syria">Syria</option>
+                          <option value="Tajikistan">Tajikistan</option>
+                          <option value="Thailand">Thailand</option>
+                          <option value="Togo">Togo</option>
+                          <option value="Timor Leste">Timor Leste</option>
+                          <option value="Tonga">Tonga</option>
+                          <option value="Trinidad and Tobago">Trinidad & Tobago</option>
+                          <option value="Tunisia">Tunisia</option>
+                          <option value="Turkey">Turkey</option>
+                          <option value="Turkmenistan">Turkmenistan</option>
+                          <option value="Tuvalu">Tuvalu</option>
+                          <option value="Uganda">Uganda</option>
+                          <option value="United Kingdom">United Kingdom</option>
+                          <option value="Ukraine">Ukraine</option>
+                          <option value="United Arab Erimates">United Arab Emirates</option>
+                          <option value="United States">United States</option>
+                          <option value="Uraguay">Uruguay</option>
+                          <option value="Uzbekistan">Uzbekistan</option>
+                          <option value="Vanuatu">Vanuatu</option>
+                          <option value="Venezuela">Venezuela</option>
+                          <option value="Vietnam">Vietnam</option>
+                          <option value="Yemen">Yemen</option>
+                          <option value="Zaire">Zaire</option>
+                          <option value="Zambia">Zambia</option>
+                          <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                      </div>
+                      <div class="col-1"></div>
+                    </div>
+
+                    <!--CATEGORY SELECTOR-->
+                    <div class="row dropdown">
+                      <div class="col-1"></div>
+                      <div class="col-10">
+                        <label for="categorySelector" style="text-align: left; white-space: nowrap">Measure Category</label>
+                        <br>
+                        <select name="category" id="categorySelector" onchange="categoryChange()">
+                          <option value="select">-All-</option>
+                          <option value="Lockdown">Lockdown</option>
+                          <option value="Movement restrictions">Movement restrictions</option>
+                          <option value="Social distancing">Social distancing</option>
+                          <option value="Governance and socio-economic measures">Governance and socio-economic measures</option>
+                          <option value="Public health measures">Public health measures</option>
+                        </select>
+                      </div>
+                      <div class="col-1"></div>
+                    </div>
+
+                    <!--STAGE SELECTOR-->
+                    <div class="row dropdown">
+                      <div class="col-1"></div>
+                      <div class="col-11">
+                        <label for="stageSelector" style="text-align: left; white-space: nowrap">Implement Phase</label>
+                        <br>
+                        <select name="stage" id="stageSelector" onchange="categoryChange()">
+                          <option value="select">-All-</option>
+                          <option value="Introduction / extension of measures">Introduction / Extension of Measures</option>
+                          <option value="Phase-out measure">Phased-out Measures</option>
+                        </select>
+                      </div>
+<!--                      <div class="col-1"></div>-->
+                    </div>
+                  </div>
+
+                  <!--BARVIS-->
+                  <div class="col-11">
+                    <div class="row" >
+                      <div class="col">
+                        <h4>Specific Measures</h4>
+                        <div id="barvis"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="travelSpending" class="section">
+        <div class="box">
+          <div class="vis">
+            <!-- heading -->
+            <div class="align-self-center"> <h3>Global Travel Spending-in Billion USD</h3></div>
+            <!-- Travel Spending Overview Start -->
+            <div class="container-fluid h-100">
+              <div class="row h-100">
+                <div class="col h-100 d-flex flex-column">
+                  <!-- graph -->
+                  <div class="flex-grow-1" id="travel-stacked-area-chart"></div>
+                </div>
+              </div>
+              <!--              <div class="row h-25">-->
+              <!--                <div class="col h-100 d-flex flex-column justify-content-center">-->
+              <!--                  &lt;!&ndash; brush &ndash;&gt;-->
+              <!--                    <div class="flex-grow-1 justify-content-center" id="travel-timeline"></div>-->
+              <!--                </div>-->
+              <!--              </div>-->
+            </div>
+            <!-- Travel Spending Overview End -->
+          </div>
+        </div>
+      </div>
+
+      <div id="travelMap" class="section">
+        <div class="box">
+          <h3>Travel Map - How covid affected the air travel Industry</h3>
+          <div class="vis">
+            <!-- Travel Map Start -->
+            <div class="container-fluid h-100">
+              <div class="row h-100">
+                <div class="col h-100 d-flex flex-column">
+                  <h4>New COVID cases per million</h4>
+                  <div id="travelMapMapVis" class="flex-grow-1"></div>
+                  <div id="travelMapDateSlider" style="height: 40px"></div>
+                </div>
+                <div class="col h-100 d-flex flex-column">
+                  <h4>Year-on-year change of weekly flight frequency</h4>
+                  <div id="travelMapLineVis" class="flex-grow-1"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Travel Map End -->
+          </div>
+        </div>
+      </div>
+
+      <div id="scenarioIntro" class="section"><div class="box">
+        <div class="vis">
+          <!-- GDP BY COUNTRY Start -->
+          <div class="container-fluid h-100">
+            <div class="row h-100">
+              <div class="col h-100 d-flex flex-column">
+                <h3>GDP Annual Growth BY COUNTRY - Hover Over labels/lines to highlight</h3>
+                <div id="scenarioIntroVis" class="flex-grow-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- GDP BY COUNTRY End -->
+      </div></div>
+
+      <div id="scenario" class="section">
+        <div class="slides">
+          <div class="slide" id="scenario0">
+            <div class="box">
+              <div class="container-fluid h-100 w-75">
+                <div class="row h-100">
+                  <div class="col-md-12 justify-content-center align-self-center"> <h1> SPECULATIVE OUTCOMES</h1> <br>
+                    <h3>How long it takes the world economy to get back on its feet will profoundly shape the future of the travel industry.</h3><br>
+                    <h3>The speculative outcomes outline four ways the interplay between the economic crisis and travel behavior shifts might unfold and its ripple effects on the accommodation & aviation industry</h3><br>
+                    <h6>Source:https://www.phocuswire.com/</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide" id="scenario1">
+            <div class="box">
+              <div class="container-fluid h-100 w-75">
+                <div class="row h-50">
+                  <div class="col-md-8 align-self-center"> <h1> SPECULATIVE OUTCOME 1</h1> <br>
+                    <h3> Economic rebound reaching pre-crisis metrics in early 2021 and triggering a new growth cycle </h3><br>
+                    <div class="d-flex justify-content-center"><span class="btn btn-outline-success badgeText">V SHAPE GDP RECOVERY</span>
+                      &nbsp&nbsp <span class="btn btn-outline-success badgeText">NO CHANGE IN TRAVEL BEHAVIOR</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="img/V-Recovery.gif">
+                  </div>
+                </div>
+                <div class="row h-50 d-flex justify-content-around align-items-center">
+                  <div class="col-md-5 aviation">
+                    <h2> AVIATION </h2><br>
+                    <h3>The pent-up demand during the lockdown period is a strong driver</h3><br>
+                    <div class="d-flex justify-content-center "> <h6 > Air Transport </h6></div>
+                    <div class="d-flex justify-content-center "><span class="btn btn-outline-success badgeText" style="margin-bottom: 10px">+23% </span>
+                    </div>
+                    <div class="d-flex justify-content-center "> <h6 > in 2023 vs 2019 baseline </h6></div>
+                  </div>
+                  <div class="col-md-5 accommodation">
+                    <h2> ACCOMMODATION </h2><br>
+                    <h3>New hygiene standards required to regain traveler's trust</h3><br>
+                    <div class="d-flex justify-content-center "> <h6>Hotels</h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h6>Airbnb</h6></div>
+                    <div class="d-flex justify-content-center "><span class="btn btn-outline-success badgeText" style="margin-bottom: 10px">+15% </span>
+                      &nbsp&nbsp&nbsp&nbsp <span class="btn btn-outline-success badgeText" style="margin-bottom: 10px">+10% </span>
+                    </div>
+                    <div class="d-flex justify-content-center "> <h6 > in 2023 vs 2019 baseline </h6></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide" id="scenario2">
+            <div class="box">
+              <div class="container-fluid h-100 w-75">
+                <div class="row h-50">
+                  <div class="col-md-8 align-self-center"> <h1>SPECULATIVE OUTCOME 2</h1> <br>
+                    <h3> Economic rebound in early 2021 but new patterns in social distancing,digital consumption, a higher focus on hygiene and health will change travel at its core.</h3><br>
+                    <div class="d-flex justify-content-center"><span class="btn btn-outline-success badgeText">V SHAPE GDP RECOVERY</span>
+                      &nbsp&nbsp <span class="btn btn-outline-warning badgeText">CHANGE IN TRAVEL BEHAVIOR</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="img/V-Recovery.gif">
+                  </div>
+                </div>
+                <div class="row h-50 d-flex justify-content-around align-items-center">
+                  <div class="col-md-5 aviation">
+                    <h2> AVIATION </h2><br>
+                    <h3>Long haul traffic drops due to global decline,short haul traffic replaced by ground transport</h3><br>
+                    <div class="d-flex justify-content-center ">&nbsp&nbsp <h6>Air</h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h6>Ground</h6></div>
+                    <div class="d-flex justify-content-center "><span class="btn btn-outline-danger badgeText" style="margin-bottom: 10px">-35% </span>
+                      &nbsp&nbsp&nbsp&nbsp <span class="btn btn-outline-success badgeText" style="margin-bottom: 10px">+5% </span>
+                    </div>
+                    <div class="d-flex justify-content-center "> <h6 > in 2023 vs 2019 baseline </h6></div>
+                  </div>
+                  <div class="col-md-5 accommodation">
+                    <h2> ACCOMMODATION </h2><br>
+                    <h3>Massive efforts to implement strict hygiene standards pays its toll with a strop drop in unit economics</h3><br>
+                    <div class="d-flex justify-content-center "> <h6>Urban</h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h6>Rural</h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h6>Airbnb</h6></div>
+                    <div class="d-flex justify-content-center "><span class="btn btn-outline-danger badgeText" style="margin-bottom: 10px">-30% </span>
+                      &nbsp&nbsp&nbsp&nbsp <span class="btn btn-outline-success badgeText" style="margin-bottom: 10px">+15% </span>
+                      &nbsp&nbsp&nbsp&nbsp <span class="btn btn-outline-danger badgeText" style="margin-bottom: 10px">-20% </span>
+                    </div>
+                    <div class="d-flex justify-content-center "> <h6 > in 2023 vs 2019 baseline </h6></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide" id="scenario3">
+            <div class="box"> <div class="container-fluid h-100 w-75">
+              <div class="row h-50">
+                <div class="col-md-8 align-self-center"> <h1>SPECULATIVE OUTCOME 3</h1><br>
+                  <h3> Economy doesn't recover fast enough. Self-reinforcing recession dynamics will kick in, triggering widespread bankruptcies and credit defaults between 2020 and 2023</h3><br>
+                  <div class="d-flex justify-content-center"><span class="btn btn-outline-danger badgeText">U SHAPE GDP RECOVERY</span>
+                    &nbsp&nbsp <span class="btn btn-outline-success badgeText"> NO CHANGE IN TRAVEL BEHAVIOR</span>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="img/U-Recovery.gif">
+                </div>
+              </div>
+              <div class="row h-50 d-flex justify-content-around align-items-center">
+                <div class="col-md-5 aviation">
+                  <h2> AVIATION </h2><br>
+                  <h3>Airline traffic experience a five to six year recovery cycle</h3><br>
+                  <div class="d-flex justify-content-center ">&nbsp&nbsp <h6>Air</h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h6>Ground</h6></div>
+                  <div class="d-flex justify-content-center "><span class="btn btn-outline-warning badgeText" style="margin-bottom: 10px">-30% ↑ </span>
+                    &nbsp&nbsp&nbsp&nbsp <span class="btn btn-outline-warning badgeText" style="margin-bottom: 10px">-5% ↑</span>
+                  </div>
+                  <div class="d-flex justify-content-center"> <h6 > in 2023 vs 2019 baseline</h6></div>
+                </div>
+                <div class="col-md-5 accommodation">
+                  <h2> ACCOMMODATION </h2><br>
+                  <h3>Most hospitality unicorns disappear or fold into a larger brand</h3><br>
+                  <div class="d-flex justify-content-center "> <h6>Hotels</h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h6>Airbnb</h6></div>
+                  <div class="d-flex justify-content-center "><span class="btn btn-outline-warning badgeText" style="margin-bottom: 10px">-25% ↑</span>
+                    &nbsp&nbsp&nbsp&nbsp <span class="btn btn-outline-warning badgeText" style="margin-bottom: 10px">-15% ↑</span>
+                  </div>
+                  <div class="d-flex justify-content-center "> <h6 > in 2023 vs 2019 baseline </h6></div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="slide" id="scenario4">
+            <div class="box"> <div class="container-fluid h-100 w-75">
+              <div class="row h-50">
+                <div class="col-md-8 align-self-center"> <h1> SPECULATIVE OUTCOME 4</h1> <br>
+                  <h3> The adoption of  virtual services brings us closer to the future of science fiction,
+                    where entertainment happens in virtual worlds hosted and orchestrated by digital giants.  </h3><br>
+                  <div class="d-flex justify-content-center"><span class="btn btn-outline-danger badgeText">U SHAPE GDP RECOVERY</span>
+                    &nbsp&nbsp <span class="btn btn-outline-warning badgeText">CHANGE IN TRAVEL BEHAVIOR</span>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="img/U-Recovery.gif">
+                </div>
+              </div>
+              <div class="row h-50 d-flex justify-content-around align-items-center">
+                <div class="col-md-5 aviation">
+                  <h2> AVIATION </h2><br>
+                  <h4>Long body aircraft becomes rare, many airports close for good.The industry goes through a massive downsizing process,
+                    due to smaller levels of global demand</h4><br>
+                  <div class="d-flex justify-content-center ">&nbsp&nbsp <h6>Air</h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h6>Ground</h6></div>
+                  <div class="d-flex justify-content-center "><span class="btn btn-outline-danger badgeText" style="margin-bottom: 10px">-60% </span>
+                    &nbsp&nbsp&nbsp&nbsp <span class="btn btn-outline-warning badgeText" style="margin-bottom: 10px">-10%</span>
+                  </div>
+                  <div class="d-flex justify-content-center "> <h6 > in 2023 vs 2019 baseline </h6></div>
+                </div>
+                <div class="col-md-5 accommodation">
+                  <h2> ACCOMMODATION </h2><br>
+                  <h4>Travel destinations shift their promotional efforts to the virtual world, allowing travelers to
+                    experience world wonders from the comfort of their couch</h4><br>
+                  <div class="d-flex justify-content-center "> <h6>Hotels</h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h6>Airbnb</h6></div>
+                  <div class="d-flex justify-content-center "><span class="btn btn-outline-danger badgeText" style="margin-bottom: 10px">-40% </span>
+                    &nbsp&nbsp&nbsp&nbsp <span class="btn btn-outline-danger badgeText" style="margin-bottom: 10px">-50% </span>
+                  </div>
+                  <div class="d-flex justify-content-center "> <h6 > in 2023 vs 2019 baseline </h6></div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- FULLPAGE -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/scrolloverflow.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+    ></script>
+
+    <!-- d3 -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+
+    <!-- OWN JS -->
+    <script src="js/main.js"></script>
+    <!-- Prefix each file with its section's id to avoid accidentally modifying others' files -->
+    <script src="js/scenarioIntro.js"></script>
+    <script src="js/travelmain.js"></script>
+    <script src="js/travelstackedAreaChart.js"></script>
+    <script src="js/traveltimeline.js"></script>
+    <script src="js/travelMapProcessData.js"></script>
+    <script src="js/travelMapMapVis.js"></script>
+    <script src="js/travelMapLineVis.js"></script>
+    <script src="js/travelMapDateSlider.js"></script>
+    <script src="js/barvis.js"></script>
+    <script src="js/dataTable.js"></script>
+  </body>
+</html>

@@ -1,0 +1,439 @@
+/* GENERAL */
+html,
+body,
+#fullpage,
+.section {
+  height: 100%;
+}
+
+@font-face {
+  font-family: SyneMono;
+  src: url(../fonts/SyneMono-Regular.ttf);
+}
+
+body {
+  margin: 30px;
+  background-color: thistle;
+  background-size: cover;
+  background-image: url("../img/background-image.jpg");
+}
+
+/* Overwrite d3's default axis sans-serif font-family */
+text {
+  font-family: SyneMono;
+}
+
+.slides {
+  position: relative;
+}
+
+.box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 50px;
+  height: 90vh;
+  padding: 50px;
+  background: #fff;
+  font-family: SyneMono;
+  display: flex;
+  flex-direction: column;
+}
+
+.vis {
+  margin: 0 40px 40px 40px;
+  flex: 1;
+}
+
+.slide .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  object-fit: contain;
+}
+
+.fp-controlArrow.fp-prev {
+  left: 60px;
+}
+
+.fp-controlArrow.fp-next {
+  right: 80px;
+}
+
+#title h1 {
+  text-align: center;
+  font-size: 30px;
+  background-color: white;
+  margin: 50px;
+  padding: 50px;
+  font-family: SyneMono;
+  font-weight: bold;
+  border: solid black;
+  border-width: 1px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+h1{
+  margin-top: -20px;
+  color: #707070;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: -20px;
+  color: #484848;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#travelPolicy h3 {
+  color: #484848;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 5vh;
+}
+
+h4 {
+  color: #484848;
+  text-align: center;
+  font-size: 14px;
+}
+
+.badgeText{
+  color: #3c3c3c!important;
+  font-size: 15px;
+  border-width:3px;
+}
+
+h6{
+  font-size: 12px;
+}
+
+ h3 {
+  color: #484848;
+  text-align: center;
+  font-size: 16px;
+}
+
+.aviation{
+  padding-top: 40px;
+  padding-bottom:10px;
+  border: dashed grey;
+  border-width: 2px;
+}
+.accommodation{
+  padding-top: 40px;
+  padding-bottom:10px;
+  border: dashed grey;
+  border-width: 2px;
+}
+
+
+
+#covidBackground .box {
+  border-radius: 86% 14% 81% 19% / 20% 87% 13% 80%;
+  background-color: hsla(168, 10%, 80%, 0.98);
+}
+#photograph .box {
+  border-radius: 86% 14% 81% 19% / 20% 87% 13% 80%;
+  background-color: hsla(168, 10%, 80%, 0.98);
+}
+#travelPolicy .box {
+  border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
+  background-color: hsla(11, 10%, 80%, 0.98);
+}
+#travelSpending .box {
+  border-radius: 86% 14% 81% 19% / 20% 87% 13% 80%;
+  background-color: hsla(168, 10%, 80%, 0.98);
+}
+#travelMap .box {
+  border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
+  background-color: hsla(11, 10%, 80%, 0.98);
+}
+#restarauntIndustry .box {
+  border-radius: 86% 14% 81% 19% / 20% 87% 13% 80%;
+  background-color: hsla(99, 17%, 80%, 0.98);
+}
+#scenarioIntro .box {
+  border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
+  background-color: hsla(11, 10%, 80%, 0.98);
+}
+#scenarioIntro .box {
+  border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
+  background-color: hsla(11, 10%, 80%, 0.98);
+}
+
+#scenario0  .box {
+  border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
+  background-color: hsla(11, 10%, 80%, 0.98);
+}
+#scenario1  .box {
+  border-radius: 86% 14% 81% 19% / 20% 87% 13% 80%;
+  background-color: hsla(99, 17%, 80%, 1);
+}
+
+#scenario2 .box {
+  border-radius: 86% 14% 81% 19% / 20% 87% 13% 80%;
+  background-color: hsla(37, 40%, 74%, 0.99);
+}
+
+#scenario3  .box {
+  border-radius: 86% 14% 81% 19% / 20% 87% 13% 80%;
+  background-color: hsla(194, 10%, 77%, 0.99);
+}
+
+#scenario4 .box {
+  border-radius: 86% 14% 81% 19% / 20% 87% 5% 30%;
+  background-color: hsla(8, 10%, 80%, 0.99);
+}
+
+#photo1 .box {
+  border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
+  background-color: hsla(11, 10%, 80%, 0.98);
+}
+
+#photo2 .box {
+  border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
+  background-color: hsla(11, 10%, 80%, 0.98);
+}
+#photo3 .box {
+  border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
+  background-color: hsla(11, 10%, 80%, 0.98);
+}
+#photo4 .box {
+  border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
+  background-color: hsla(11, 10%, 80%, 0.98);
+}
+
+
+#scenario img{
+  width:100%;
+  height:100%;
+  object-fit: contain;
+}
+
+#photograph-2 img{
+  width:100%;
+  height:100%;
+  object-fit: contain;
+}
+
+/* Shared tooltip style */
+.tooltip {
+  position: absolute;
+  background-color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  padding: 4px 8px;
+  pointer-events: none;
+}
+
+/* SECTION SPECIFIC */
+/* To avoid accidentally overwriting others' styles, please fix your own style with your section's ID */
+/* For example, #scenario .axis instead of just .axis */
+
+/* Travel Map */
+#travelMap text {
+  fill: #707070;
+}
+
+#travelMap .tick line,
+#travelMap .domain,
+#travelMap .base-line {
+  stroke: #707070;
+}
+
+#travelMap .base-line {
+  stroke-dasharray: 4;
+}
+
+#travelMap .location-line {
+  stroke-opacity: 0.7;
+}
+
+#travelMap .location-line-label {
+  font-size: 10px;
+  stroke: hsla(11, 10%, 80%, 0.98);
+  stroke-width: 3px;
+  paint-order: stroke;
+}
+
+#travelMap .location-line-circle {
+  stroke: hsla(11, 10%, 80%, 0.98);
+}
+
+#travelMap .focus-circle {
+  stroke: hsla(11, 10%, 80%, 0.98);
+  fill: #707070;
+}
+
+#travelMap .location-g.muted {
+  opacity: 0.1;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.area {
+  opacity: 0.7;
+  clip-path: url(#clip);
+}
+
+
+/*photograph*/
+#photograph .container-fluid {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#photograph .col-md-8 .offset-2 {
+  margin-top: 5vh;
+  border: thin solid grey;
+  border-radius: 5px;
+  background: rgba(221,221,221,0.45)
+}
+
+#photograph #carouselExampleIndicators{
+  margin-top: -15vh;
+}
+
+#photograph .carousel-indicators #pageNum{
+  margin-top: -15vh;
+}
+
+#photograph .carousel-item{
+  margin-top: -5vh;
+}
+
+
+#photograph .image-caption{
+  font-size: 12px;
+}
+
+#photograph .carousel-caption{
+  margin-top: -5vh;
+  color: #707070;
+  font-size: 10px;
+}
+
+
+/*covid background*/
+#covidBackground h1 {
+  font-weight: 100;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#covidBackground h2 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#covidBackground h6{
+  font-size: 50px;
+  color: #484848
+}
+
+#covidBackground .caption
+{
+  /*font-size: 20px;*/
+  color: #707070;
+  /*margin-top: -10px;*/
+  /*margin-bottom: 40px;*/
+  text-align: left;
+}
+
+#covidBackground h5{
+  font-size: 12px;
+  color: #ffffff;
+}
+
+
+/*policy*/
+#travelPolicy .axis line,
+#travelPolicy .axis path {
+  fill: none;
+  stroke: #3c3c3c;
+  shape-rendering: crispEdges;
+}
+
+/*#travelPolicy .tick text {*/
+#travelPolicy text {
+  font-family: sans-serif;
+  font-size: 10px;
+  fill: #3c3c3c;
+}
+
+#travelPolicy .bar {
+  fill: #ffb100;
+}
+
+#travelPolicy th{
+  font-size: 12px;
+  text-align:center;
+  color: #3c3c3c;
+}
+
+#travelPolicy tr{
+  color: #3c3c3c;
+  font-size: 25px;
+  text-align:center;
+}
+
+#travelPolicy label{
+  color: #3c3c3c;
+  font-size: 14px;
+}
+
+#travelPolicy .dropdown{
+  margin-bottom: 2vh;
+}
+
+#travelPolicy select{
+  width:100px;
+}
+
+#travelPolicy #xgrid,
+#travelPolicy #ygrid{
+  color: #d6d6d6;
+  border-bottom:2px dotted #000;
+}
+
+#travelPolicy #tableDiv{
+  margin-top: 30px;
+}
+
+#travelPolicy .x-axis text{
+  text-anchor: start;
+  transform: rotate(45deg);
+}
+
+#travelPolicy #axis_label{
+  font-size: 12px;
+  color: #3c3c3c;
+}
+
+#travelPolicy .filter{
+
+  transform: translate(15,0);
+}
+
+.background-moved{
+  transform: translate(10vh, 0px);
+}
+
+/*#photo1 img{*/
+/*  transform: translate(0,-5vh);*/
+/*}*/

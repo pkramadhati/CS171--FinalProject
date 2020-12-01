@@ -36,6 +36,7 @@ text {
   padding: 50px;
   background: #fff;
   font-family: SyneMono;
+  max-width:1200px;
   display: flex;
   flex-direction: column;
 }

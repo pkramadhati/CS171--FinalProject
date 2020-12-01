@@ -36,7 +36,6 @@ text {
   padding: 50px;
   background: #fff;
   font-family: SyneMono;
-  max-width:1200px;
   display: flex;
   flex-direction: column;
 }
@@ -160,7 +159,7 @@ h6{
 }
 #scenarioIntro .box {
   border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
-  background-color: hsla(11, 10%, 80%, 0.98);
+  background-color: hsla(99, 17%, 80%, 0.98);
 }
 
 #scenario0  .box {
@@ -204,7 +203,10 @@ h6{
   border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
   background-color: hsla(168, 10%, 80%, 0.98);
 }
-
+#conclusion .box {
+  border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
+  background-color: hsla(168, 10%, 80%, 0.98);
+}
 
 #scenario img{
   width:100%;

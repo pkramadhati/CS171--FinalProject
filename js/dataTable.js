@@ -27,7 +27,7 @@ class DataTable {
                 <th scope="col">Lockdown</th>
                 <th scope="col">Movement Restriction</th>
                 <th scope="col">Social Distancing</th>
-                <th scope="col">Government & Social-Economics Measures</th>
+                <th scope="col">Government & Social-Economics</th>
                 <th scope="col">Public Health</th>
             </tr>`
         )
@@ -121,32 +121,22 @@ class DataTable {
 
     updateTable() {
         let tableObject = this;
-        let publicHealth, governmentSocio, movementRestriction, socialDistance, lockDown;
 
-        if(tableObject.categoryGroup[0] != undefined){publicHealth = tableObject.categoryGroup[0]['count'];}
-        else{publicHealth = 0;}
-
-        if(tableObject.categoryGroup[1] != undefined){governmentSocio = tableObject.categoryGroup[1]['count'];}
-        else{governmentSocio = 0;}
-
-        if(tableObject.categoryGroup[2] != undefined){movementRestriction = tableObject.categoryGroup[2]['count'];}
-        else{movementRestriction = 0;}
-
-        if(tableObject.categoryGroup[3] != undefined){socialDistance = tableObject.categoryGroup[3]['count'];}
-        else{socialDistance = 0;}
-
-        if(tableObject.categoryGroup[4] != undefined){lockDown = tableObject.categoryGroup[4]['count'];}
-        else{lockDown = 0;}
+        let lockDown = tableObject.categoryGroup[0]['count'];
+        let movementRestriction = tableObject.categoryGroup[1]['count'];
+        let socialDistance = tableObject.categoryGroup[2]['count'];
+        let governmentSocio = tableObject.categoryGroup[3]['count'];
+        let publicHealth = tableObject.categoryGroup[4]['count'];
 
         tableObject.tbody.html('');
 
         let row = tableObject.tbody.append("tr")
         row.html(
-            `<td>${lockDown}</td>
+            `<td>${publicHealth}</td>
         <td>${movementRestriction}</td>
-        <td>${socialDistance}</td>
         <td>${governmentSocio}</td>
-        <td>${publicHealth}</td>`
+        <td>${socialDistance}</td>
+        <td>${lockDown}</td>`
         )
     }
 

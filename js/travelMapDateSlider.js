@@ -31,7 +31,7 @@ class TravelMapDateSlider {
       .append("div")
       .attr("class", "col-auto px-0")
       .append("button")
-      .attr("class", "btn btn-primary mr-3")
+      .attr("class", "btn btn-primary btn-sm mr-3")
       .on("click", () => {
         if (vis.running()) return vis.stop();
         vis.start();

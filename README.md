@@ -11,15 +11,25 @@
 
 - `js/`:
 -’barvis.js/’: contains bar chart visualization for government policy 
+
 -’dataTable.js/’: contains interactive elements for the bar chart visualization
+
 -’travelSpendingMain.js’/: loads data for the stacked area chart on spending 
--’travelSpendingTimeline.js’/: handles brushing for the stacked area chart (now disabled) 
+
+-’travelSpendingTimeline.js’/: handles brushing for the stacked area chart (now disabled)
+
 -’travelSpendingstackedAreaChart.js’/: stacked area chart visualization on global travel spending
+
 -’main.js’/:loads data for the travel map
+
 -’travelMapDateSlider.js’/: slider for travel map animation
+
 -’travelMapLineVis.js’/: multi line chart for flight frequency
+
 -’travelMapProcessData.js’/: 
+
 -travelMapMapVis.js’/: Global Map for the number of covid 19 cases
+
 -’gdpGrowth.js’/: multi line chart for Global GDP growth 
 
 

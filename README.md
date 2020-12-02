@@ -1,4 +1,4 @@
-#Visualizing the impact of covid-19 on the travel industry
+##Visualizing the impact of covid-19 on the travel industry
 
 **Team members**: Prabha Kramadhati, Zhaodi Wang, Chenyi Gong 
 

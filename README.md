@@ -6,31 +6,31 @@
 
 ## Project Structure
 
-- css/`: contains custom css file `style.css`.
+- 'css/`: contains custom css file  'style.css`.
 - `data/`: contains all the data files 
 
 - `js/`:
--’barvis.js/’: contains bar chart visualization for government policy 
+- ’barvis.js/’: contains bar chart visualization for government policy 
 
--’dataTable.js/’: contains interactive elements for the bar chart visualization
+- ’dataTable.js/’: contains interactive elements for the bar chart visualization
 
--’travelSpendingMain.js’/: loads data for the stacked area chart on spending 
+- ’travelSpendingMain.js’/: loads data for the stacked area chart on spending 
 
--’travelSpendingTimeline.js’/: handles brushing for the stacked area chart (now disabled)
+- ’travelSpendingTimeline.js’/: handles brushing for the stacked area chart (now disabled)
 
--’travelSpendingstackedAreaChart.js’/: stacked area chart visualization on global travel spending
+- ’travelSpendingstackedAreaChart.js’/: stacked area chart visualization on global travel spending
 
--’main.js’/:loads data for the travel map
+- ’main.js’/:loads data for the travel map
 
--’travelMapDateSlider.js’/: slider for travel map animation
+- ’travelMapDateSlider.js’/: slider for travel map animation
 
--’travelMapLineVis.js’/: multi line chart for flight frequency
+- ’travelMapLineVis.js’/: multi line chart for flight frequency
 
--’travelMapProcessData.js’/: 
+- ’travelMapProcessData.js’/: 
 
--travelMapMapVis.js’/: Global Map for the number of covid 19 cases
+- 'travelMapMapVis.js’/: Global Map for the number of covid 19 cases
 
--’gdpGrowth.js’/: multi line chart for Global GDP growth 
+- ’gdpGrowth.js’/: multi line chart for Global GDP growth 
 
 
 - `img/`: contains images for ,backgrounds,etc. 

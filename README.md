@@ -41,9 +41,13 @@
 Plugins used 
 
 Bootstrap 4.5.2
+
 Fullpage 3.0.9
+
 Jquery 3.5.1
+
 D3 v6
+
 D3 topo-jason v3
 
 

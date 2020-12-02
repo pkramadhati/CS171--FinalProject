@@ -141,6 +141,12 @@ h6{
   border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
   background-color: hsla(11, 10%, 80%, 0.98);
 }
+
+#spendingPhotos .box{
+  border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
+  background-color: hsla(168, 10%, 80%, 0.92);
+}
+
 #travelSpending .box {
   border-radius: 86% 14% 81% 19% / 20% 87% 13% 80%;
   background-color: hsla(168, 10%, 80%, 0.98);
@@ -153,10 +159,11 @@ h6{
   border-radius: 86% 14% 81% 19% / 20% 87% 13% 80%;
   background-color: hsla(99, 17%, 80%, 0.98);
 }
-#scenarioIntro .box {
+#GDPphotos .box {
   border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
-  background-color: hsla(11, 10%, 80%, 0.98);
+  background-color: hsla(168, 10%, 80%, 0.92);
 }
+
 #scenarioIntro .box {
   border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
   background-color: hsla(99, 17%, 80%, 0.98);
@@ -205,7 +212,7 @@ h6{
 }
 #conclusion .box {
   border-radius: 14% 86% 17% 83% / 82% 15% 85% 18%;
-  background-color: hsla(168, 10%, 80%, 0.98);
+  background-color: hsla(168, 10%, 80%, 0.8);
 }
 
 #scenario img{

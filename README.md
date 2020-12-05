@@ -3,6 +3,7 @@
 **Team members**: Prabha Kramadhati, Zhaodi Wang, Chenyi Gong 
 
 *URL to the website : https://pkramadhati.github.io/CS171-FinalProject/
+*URL to the screencast : https://youtu.be/w3968Gf_WGM
 
 ## Project Structure
 

@@ -12,7 +12,7 @@ class TravelMapDateSlider {
     let vis = this;
 
     vis.interval = null;
-    vis.delay = 500;
+    vis.delay = 200;
 
     vis.row = d3
       .select("#" + vis.parentElement)

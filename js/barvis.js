@@ -63,7 +63,9 @@ initVis(){
         .text("Number of Measures");
 
     // append tooltip
-    vis.tooltip = d3.select("body").append("div").attr("class", "tooltip");
+    vis.tooltip = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .attr('id', 'barTooltip')
 
     // (Filter, aggregate, modify data)
     vis.wrangleData();
@@ -170,7 +172,6 @@ updateVis(){
     vis.y.domain([0, vis.displayData[0]['count']]).nice();
 
 
-
     // gridlines function
     function make_x_gridlines() {
         return d3.axisBottom(vis.x);
@@ -204,13 +205,8 @@ updateVis(){
     bars.enter().append("rect")
         .attr("class", "bar")
         .merge(bars)
-        .transition()
-        .attr("width", vis.x.bandwidth()-10)
-        .attr("height", (d,i) => vis.height - vis.y(vis.displayData[i]['count']))
-        .attr("x", (d, i) => vis.x(vis.displayData[i]['measure']))
-        .attr("y", (d, i) => vis.y(vis.displayData[i]['count']))
-
-        bars.on('mouseover', function(event, d) {
+        // .transition()
+        .on('mouseover', function(event, d) {
             let measure_detail = {
                 'Additional health or other document requirements upon arrival': 'Authorities upon arrival to a country may request a health declaration format or doctor\'s certifications to allow entry.',
                 'Border checks':'Authorities may travel and identification document checks in land and sea entry points in a country.',
@@ -250,23 +246,41 @@ updateVis(){
                 'Closure of businesses and public services':'Local business and public service shut down.',
                 'Isolation and quarantine policies':'In-home quarantine for high-risk virus transmitters.'};
 
+            d3.select(this)
+                .attr('stroke', 'rgb(255,52,0)')
+
             vis.tooltip
                 .style("opacity", 1)
                 .style("left", event.pageX + 20 + "px")
                 .style("top", event.pageY + "px")
                 .html(`<div style="max-width: 200px; overflow-wrap: break-word">
-                            <h3>${d['measure']}</h3>
-                            <h4>${d['count']}</h4>
-                            <h6 style="font-weight: normal; color: #707070">${measure_detail[d['measure']]}</h6>
-                        </div>`)
+                                <h3>${d['measure']}</h3>
+                                <h4>${d['count']}</h4>
+                                <h6 style="font-weight: normal; color: #707070">${measure_detail[d['measure']]}</h6>
+                            </div>`)
         })
+
         .on('mouseout', function(event, d){
+            d3.select(this)
+                .attr('stroke-width', '0px')
+                .attr("fill", 'rgb(255,52,0)')
+                .attr("stroke","none")
+                .attr("stroke-width","0.5")
+
             vis.tooltip
                 .style("opacity", 0)
                 .style("left", 0)
                 .style("top", 0)
                 .html(``);
-        });
+        })
+        .transition()
+        .attr("width", vis.x.bandwidth()-10)
+        .attr("height", (d,i) => vis.height - vis.y(vis.displayData[i]['count']))
+        .attr("x", (d, i) => vis.x(vis.displayData[i]['measure']))
+        .attr("y", (d, i) => vis.y(vis.displayData[i]['count']));
+
+
+
 
     // Call axis function with the new domain
     vis.svg.select(".y-axis").call(vis.yAxis)
@@ -281,6 +295,8 @@ updateVis(){
         .attr("dy", ".15em")
         .style("text-anchor", "start")
         .attr("transform", "rotate(45)");
+
+
 
     bars.exit().remove();
     xgrid.exit().remove();
